@@ -1,0 +1,12 @@
+body {
+  margin: 10px;
+}
+
+/* descendant selector */
+#products p {
+  color: orange;
+}
+
+p:first-child{
+  color:green
+}

@@ -1,0 +1,28 @@
+body {
+  /* 1. type selector */
+  margin: 10px;
+}
+
+#products {
+  /* 2. id selector */
+}
+
+.product {
+  /* 3. class selector */
+}
+
+/* a[href="https://google.com"] { !* 4. attribute selector: check the exact match *! */
+/*     color:green; */
+/* } */
+
+a[href^="https"][href$=".com"] {
+  /* a[href*="https"]: href contains a https */
+  /* a[href^="https"]: href starts with a https */
+  /* a[href$="https"]: href ends with a https */
+  color: blue;
+}
+
+a[target="_blank"] {
+  /* can also be a[target] */
+  color: red;
+}

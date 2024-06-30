@@ -1,0 +1,8 @@
+body {
+  /* this will bring back the space that we had earlier(before we use the normalize.css) */
+  margin:10px;
+}
+
+p {
+  color:orange;
+}
