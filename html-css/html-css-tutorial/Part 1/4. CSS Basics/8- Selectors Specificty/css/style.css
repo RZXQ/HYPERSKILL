@@ -1,0 +1,39 @@
+/* selector specificity(weight): id selector > class & attribute selectors > element selector */
+/* selector specificity(a, b, c): a is number of id selectors, b means the number of class/attribute selectors, c means the number of element selectors */
+
+/* the specificity is 1 */
+h1 {
+  /* when we apply this rule !important, other changes will be discarded. But we should avoid it because using the important keyword will make css messy and hard to maintain */
+  /* color: dodgerblue !important; */
+  color: dodgerblue;
+}
+
+/* the specificity is 10 */
+.highlight {
+  color: deeppink;
+}
+
+/* the specificity is 100 */
+#products {
+  color: green;
+}
+
+/* #products { */
+/*   color:brown; */
+/* } */
+
+/* This selector is using a combination of class (highlight) and ID (products) selectors without a space between them. What this means is that it will select any HTML element that simultaneously has a class of highlight AND an ID of products. This has a very high specificity, because it combines a class and an ID selector. */
+/* the specificity is 110 */
+.highlight#products {
+  color: dodgerblue;
+}
+
+/* the specificity is 101*/
+h1#products {
+  color: deeppink;
+}
+
+/* This selector is using a combination of a class selector (.featured) and ID selector (#products), but there's a space in between. The space signifies that #products is a child or descendant of .featured. So, it will select any HTML element with an ID of products that is nested inside (at any level) an element with a class of featured. */
+/* the specificity is 110*/
+.featured #products {
+}
