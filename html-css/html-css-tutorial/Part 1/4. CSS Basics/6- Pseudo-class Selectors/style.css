@@ -1,0 +1,53 @@
+body {
+  margin: 10px;
+}
+
+/* pseudo class selector */
+
+/* article :first-child CSS selector targets the first child element inside each <article> element, regardless of its type. */
+/* article :first-child { */
+/*   font-size: 140%; */
+/*   font-style: italic; */
+/* } */
+
+/* The article :first-of-type CSS selector targets the first child of the <article> element, regardless of what type of element it is. */
+/* article :first-of-type { */
+/*   font-size: 140%; */
+/*   font-style: italic; */
+/* } */
+
+/* The article p:first-of-type CSS selector targets the first <p> (paragraph) element that is a direct child of an <article> element on the page. */
+/* article p:first-of-type { */
+/*   font-size: 140%; */
+/*   font-style: italic; */
+/* } */
+
+/* The article p:last-of-type CSS selector targets the last <p> (paragraph) element that is a direct child of an <article> element. */
+/* article p:last-of-type { */
+/*   font-weight: bold; */
+/* } */
+
+/* article p:last-child CSS selector targets the last child of the <article> element, only if it is a <p> element. */
+/* article p:last-child { */
+/*   font-weight: bold; */
+/* } */
+
+/* article :last-child will select the last child element inside article elements. This child element can be of any type. */
+article :last-child {
+  font-weight: bold;
+}
+
+/* The CSS :nth-child(n) selector matches every element that is the nth child, regardless of the element type, of its parent. In your specific example of ul li:nth-child(even) {, it will select every li that is an even child of its parent ul. */
+/* (3n): can also be 3n, will select every third element in our list */
+ul li:nth-child(odd) {
+  color: deeppink;
+}
+
+a:visited,
+a:link {
+  color: dodgerblue;
+}
+a:hover,
+a:focus {
+  color: deeppink;
+}
