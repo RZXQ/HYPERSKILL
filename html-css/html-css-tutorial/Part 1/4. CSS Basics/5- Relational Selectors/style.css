@@ -2,11 +2,30 @@ body {
   margin: 10px;
 }
 
-/* descendant selector */
-#products p {
-  color: orange;
-}
+/*
+relational selectors:
+1. cleaner markup
+2. can be fragile(if we reorder the sequence of the elements)
+3. not as fast as basic selectors(because )
+*/
 
-p:first-child{
-  color:green
-}
+/* descendant selector */
+/* #products p will select all the p inside #products */
+/* #products p { */
+/*   color: orange; */
+/* } */
+
+/* #products > p selection will select all p elements that are direct children of the #products element. */
+/* #products > p { */
+/*   color: orange; */
+/* } */
+
+/* The CSS selector #products + p uses the adjacent sibling combinator (+). This selector selects the element that is immediately after the former element, and they share the same parent. */
+/* #products + p{ */
+/*  color:orange*/
+/* } */
+
+/* The #products ~ p CSS selector uses the general sibling combinator (~). This selector selects all elements that are siblings of a certain element. */
+/* #products ~ p { */
+/*   color: orange; */
+/* } */
