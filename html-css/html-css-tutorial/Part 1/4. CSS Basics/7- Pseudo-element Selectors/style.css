@@ -1,0 +1,24 @@
+/* pseudo elements: to style part of an element Eg. First letter */
+/* pseudo classes: to style elements in a particular state Eg. Hovered anchor */
+p::first-letter {
+  font-weight: bold;
+}
+
+p::first-line {
+  font-weight: bold;
+}
+
+/* any element selected would have a pink background */
+::selection {
+  background-color: pink;
+}
+
+/* with the pseudo element, we can insert some content before or after the content of an element */
+p::before {
+  content: "...";
+  display: block;
+}
+
+p::after {
+  content: "...";
+}
